@@ -1,0 +1,218 @@
+:root {
+
+    /* ----- PALETA DE COLORES ------ */
+
+    --color-principal:#071019;
+    --color-secundary:#0968b4;
+    --color-opcional_1: #5a99c4;
+    --color-opcional_2: #4bbfca;
+
+    /* ----- tipografia ----- */
+
+    --fuente-principal: 'Open Sans Condensed', sans-serif;
+    --fuente-secundary: 'Roboto', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------- HEADER ------------- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header .logo-principal {
+    margin-left: 30px;
+}
+
+.header .main-hamburguer {
+    display: none;
+}
+
+.header nav ul {
+    display: flex;
+    padding-right: 30px;
+}
+
+.header nav ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: var(--color-principal);
+    font-family: var(--fuente-secundary);
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.header nav ul li a:hover {
+    color: var(--color-opcional_1) ;
+}
+
+/* ------------- SECTION - PRINCIPAL ------------- */
+
+.section-principal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-principal .informacion-principal {
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    padding: 100px 80px 0 30px;
+}
+
+.section-principal .informacion-principal h1 {
+    font-family: var(--fuente-secundary);
+    font-size: 35px;
+    margin: 0 0 50px 0;
+    color: var(--color-principal);
+}
+
+.section-principal .informacion-principal h1 span {
+    font-size: 50px;
+}
+
+.section-principal .informacion-principal p {
+    font-family: var(--fuente-secundary);
+    text-align: justify;
+    color: var(--color-principal);
+    font-size: 20px;
+}
+
+.section-principal .informacion-principal p b {
+    color: #25a0db;
+}
+
+
+/* ------------- CARROUSEL ------------- */
+
+
+.section-principal .carrousel {
+    width: 50%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+.carrousel .carousel-item  {
+    padding: 20px 80px 0 80px;
+}
+
+.carrousel .carousel-item img {
+    margin-bottom: 30px;
+}
+
+.carrousel .carousel-item .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.carrousel .carousel-item .items h2 {
+    margin: 0 30px 0 10px;
+    font-family: var(--fuente-secundary);
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-principal);
+    /* background-color: var(--color-opcional_1);
+    border-radius: 5px;
+    padding: 5px 10px; */
+}
+
+.carrousel .carousel-item .items a {
+    font-family: var(--fuente-secundary);
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--color-principal);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--color-opcional_1);
+}
+
+.carrousel .carousel-item .items a:hover {
+    background-color: var(--color-opcional_2);
+    color: var(--color-principal);
+}  
+
+
+
+
+/* ------------- MEDIAL ------------- */
+
+@media (max-width:817px) {
+    .header nav {
+        display: none;
+    }
+
+    .header .main-hamburguer {
+        display: block;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .header .logo-principal {
+        margin-left: 15px;
+    }
+
+    .section-principal {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-principal .informacion-principal {
+        width: 90%;
+        padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-principal .carrousel {
+        width: 100%;
+        height: auto;
+    }
+
+    .carrousel .carousel-item {
+        padding: 10px;
+    }
+
+    .carrousel .carousel-item .items h2 {
+        margin: 0 10px 0 0;
+    }
+
+    .carrousel .carousel-item img {
+        margin-bottom: 30px;
+        vertical-align: middle;
+    }
+    
+    .section-principal .informacion-principal h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .section-principal .informacion-principal p {
+        text-align: center;
+    }
+}
