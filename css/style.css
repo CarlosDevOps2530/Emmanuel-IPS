@@ -170,6 +170,7 @@
     background-color: var(--color-opcional_2);
     text-align: center;
     margin-bottom: 30px;
+    padding: 0 10px;
 }
 
 .services h1 {
@@ -178,7 +179,7 @@
 }
 
 .services p {
-    padding: 20px;
+    padding: 20px 0;
     background-color: var(--color-opcional_2);
     font-family: var(--fuente-secundary);
     font-size: 20px;
@@ -276,9 +277,7 @@
         text-align: center;
     }
 
-    .services h1 {
-        padding: 20px;
-    }
+    
     
 
 }
