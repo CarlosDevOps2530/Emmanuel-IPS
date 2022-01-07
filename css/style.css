@@ -248,6 +248,12 @@ html {
     transition: 0.5s all ease;
 }
 
+
+
+/* ------------- SLIDER  REHABILITACION INFANTIL ------------- */
+
+
+
 .section-portafolio .slider .slider-texto:nth-child(1) {
     background-image: url('../images/SLIDER/REHABILITACION/FISIO-min-min_opt.jpg');
     background-repeat: no-repeat;
@@ -304,6 +310,46 @@ html {
     background-position: center;
 }
 
+
+
+/* ------------- SLIDER CONSULTA EXTERNA ------------- */
+
+
+.section-portafolio .slider .externa:nth-child(1) {
+    background-image: url('../images/SLIDER/EXTERNA/fisio-externa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-portafolio .slider .externa:nth-child(2) {
+    background-image: url('../images/SLIDER/EXTERNA/psiquiatria_opt.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-portafolio .slider .externa:nth-child(3) {
+    background-image: url('../images/SLIDER/EXTERNA/neuro_opt.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-portafolio .slider .externa:nth-child(4) {
+    background-image: url('../images/SLIDER/EXTERNA/neuro_opt.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: none;
+}
+
+
+
+
+
+
+
 .section-portafolio .slider .slider-texto .section-texto {
     display: none;
     transition: 0.6s all ease;
@@ -327,25 +373,25 @@ html {
     width: 220px;
     border-radius: 0 0 10px 10px;
     padding: 10px 0;
+    background-image: none;
 }
 
 .section-portafolio .slider .slider-texto:hover .section-texto p {
     font-weight: bold;
     margin: 0;
     text-align: center;
+    color: var(--color-opcional_3)
 }
 
 .section-portafolio .slider .slider-texto:hover .section-texto a {
     text-decoration: none;
-    color: var(--color-principal);
+    color: var(--color-opcional_2);
    
 }
 
 .section-portafolio .slider .slider-texto:hover .section-texto a:hover {
-    color: var(--color-opcional_2);
+    color: var(--color-opcional_3);
 }
-
-
 
 
 
