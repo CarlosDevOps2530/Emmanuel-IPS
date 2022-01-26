@@ -56,6 +56,25 @@ html {
 .header ul {
     display: flex;
     padding-right: 30px;
+    position: relative;
+}
+
+.header ul.is-active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    /* opacity: 0.5; */
 }
 
 .header ul li {
@@ -397,7 +416,7 @@ html {
 
 
 
-/* ------------- MEDIAL ------------- */
+/* ------------- MEDIA ------------- */
 
 @media (max-width:817px) {
 
@@ -416,8 +435,8 @@ html {
         display: block;
         cursor: pointer;
         z-index: 3;
-        position: fixed;
-        right: 20px;
+        /* position: fixed; */
+        margin-right: 15px;
     }
 
     .header .logo-principal {
@@ -426,6 +445,10 @@ html {
 
     .header ul {
         display: none;
+    }
+
+    .header ul li a {
+        color: var(--color-opcional_3)
     }
 
     .section-principal {

@@ -1,17 +1,12 @@
-let hamburguer = document.getElementById('hamburguer');
-let lista = document.querySelector('.menu')
+let mainHamburguer = document.getElementById('hamburguer');
+let menu = document.getElementById('menu');
 
-// window.addEventListener('load', function () {
-//     lista.classList.remove('is-active')
-// });
-
-function MostrarMenu () {
-    if (lista.classList.contains('is-active') == false) {
-        lista.classList.add('is-active')
+function mostrarMenu () {
+    if (!menu.classList.contains('is-active')) {
+        menu.classList.add('is-active') 
     } else {
-        lista.classList.remove('is-active')
+        menu.classList.remove('is-active') 
     }
-
 }
-
-hamburguer.addEventListener('click', MostrarMenu)
+    
+mainHamburguer.addEventListener('click', mostrarMenu)
